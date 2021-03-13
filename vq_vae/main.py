@@ -15,13 +15,10 @@ from vq_vae.util import setup_logging_from_args
 from vq_vae.auto_encoder import *
 
 models = {
-    'custom': {'vqvae': VQ_CVAE,
-               'vqvae2': VQ_CVAE2},
-    'imagenet': {'vqvae': VQ_CVAE,
-                 'vqvae2': VQ_CVAE2},
+    'custom': {'vqvae': VQ_CVAE},
+    'imagenet': {'vqvae': VQ_CVAE},
     'cifar10': {'vae': CVAE,
-                'vqvae': VQ_CVAE,
-                'vqvae2': VQ_CVAE2},
+                'vqvae': VQ_CVAE},
     'mnist': {'vae': VAE,
               'vqvae': VQ_CVAE},
 }
